@@ -1,0 +1,3008 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfajores Guaymallén S.A. — Estrategia de Marketing Digital</title>
+  <meta name="description" content="Presentación ejecutiva SCQA de Marketing Digital para Alfajores Guaymallén S.A. (SEO, SEM, GEO y TikTok)." />
+  <meta property="og:title" content="Alfajores Guaymallén S.A. — Estrategia de Marketing Digital" />
+  <meta property="og:description" content="4 millones de alfajores por día y cero anuncios digitales: diagnóstico SCQA y plan integral SEO, SEM, GEO y TikTok." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Zain:wght@800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Paleta Oficial Alfajores Guaymallén S.A. */
+      --color-primary: #D51317;
+      --color-primary-digital: #E40014;
+      --color-secondary: #DAC174;
+      --color-secondary-dark: #C2A06B;
+      --color-accent-yellow: #FDD213;
+      --color-accent-blue: #6AAEE7;
+      --color-accent-pink: #FF9CAF;
+      --color-accent-green: #52B07B;
+      --color-accent-ddl: #AC702D;
+      --color-caramel: #9E6323;
+      --color-caramel-soft: #CCA57D;
+      --color-accent-choco: #35120E;
+      --color-accent-gold: #E8BF8D;
+      --color-accent-platinum: #969B9E;
+      --color-accent-ruby: #8B1824;
+
+      /* Neutros Cálidos */
+      --bg-light: #FFF6ED;
+      --bg-dark: #1E0B07;
+      --bg-dark-elevated: #2D140E;
+      --surface: #FFFFFF;
+      --text-primary: #1E0B07;
+      --text-secondary: #4E453F;
+      --text-on-dark: #FFF6ED;
+      --text-muted-on-dark: #DECFC2;
+      --border-light: rgba(30, 11, 7, 0.11);
+      --border-dark: rgba(255, 246, 237, 0.15);
+
+      /* Tipografía */
+      --font-display: 'Zain', Arial, sans-serif;
+      --font-body: 'Poppins', sans-serif;
+
+      /* Radios y Sombras */
+      --radius-pill: 9999px;
+      --radius-card: 22px;
+      --radius-inner: 14px;
+      --shadow-soft: 0 12px 32px -12px rgba(30, 11, 7, 0.14);
+      --shadow-elevated: 0 22px 42px -14px rgba(158, 99, 35, 0.24);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--font-body);
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Barra de Progreso Superior (4px) */
+    .progress-track {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.14);
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 6.25%;
+      background: linear-gradient(90deg, var(--color-primary-digital) 0%, var(--color-accent-yellow) 100%);
+      transition: width 320ms var(--ease-out-expo);
+    }
+
+    /* Contenedor Maestro del Deck */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    /* Diapositiva Base */
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      padding: clamp(28px, 3.8vh, 48px) clamp(32px, 4.5vw, 72px) clamp(58px, 7vh, 76px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translate3d(28px, 0, 0);
+      transition: opacity 340ms var(--ease-out-expo), transform 380ms var(--ease-out-expo), visibility 0s linear 380ms;
+      overflow: hidden;
+    }
+
+    .slide.is-active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translate3d(0, 0, 0);
+      transition: opacity 340ms var(--ease-out-expo), transform 380ms var(--ease-out-expo), visibility 0s linear 0s;
+      z-index: 2;
+    }
+
+    .slide.is-prev {
+      transform: translate3d(-28px, 0, 0);
+    }
+
+    /* Temas de Superficie (Cálido Crema & Cacao Profundo Guaymallén) */
+    .slide--light {
+      background-color: var(--bg-light);
+      color: var(--text-primary);
+      background-image:
+        radial-gradient(circle at 90% 12%, rgba(204, 165, 125, 0.20) 0%, transparent 44%),
+        radial-gradient(circle at 10% 88%, rgba(213, 19, 23, 0.05) 0%, transparent 40%);
+    }
+
+    .slide--dark {
+      background-color: var(--bg-dark);
+      color: var(--text-on-dark);
+      background-image:
+        radial-gradient(circle at 82% 16%, rgba(158, 99, 35, 0.26) 0%, transparent 48%),
+        radial-gradient(circle at 14% 84%, rgba(213, 19, 23, 0.14) 0%, transparent 44%),
+        linear-gradient(180deg, #270F0A 0%, #180805 100%);
+    }
+
+    /* Olas orgánicas de chocolate y dulce de leche (identidad visual oficial) */
+    .industrial-grid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 1;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 100% 106px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,62 C240,18 480,104 740,56 C1000,8 1240,86 1440,42 L1440,120 L0,120 Z' fill='%234B1F14' fill-opacity='0.65'/%3E%3Cpath d='M0,82 C300,116 560,34 860,78 C1120,116 1300,48 1440,68 L1440,120 L0,120 Z' fill='%239E6323' fill-opacity='0.24'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .slide--light .industrial-grid {
+      opacity: 1;
+      background-size: 100% 92px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,64 C260,22 500,104 780,54 C1040,8 1260,88 1440,44 L1440,120 L0,120 Z' fill='%23CCA57D' fill-opacity='0.28'/%3E%3Cpath d='M0,86 C320,114 580,38 880,78 C1140,112 1320,52 1440,70 L1440,120 L0,120 Z' fill='%239E6323' fill-opacity='0.14'/%3E%3C/svg%3E");
+    }
+
+    /* Doble ola de chocolate + dulce de leche en portada y cierre */
+    .brand-wave {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 74px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .brand-wave--closing {
+      height: 104px;
+    }
+
+    .slide-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: clamp(14px, 2vh, 24px);
+    }
+
+    /* Cabecera Editorial Limpia (Zero-Pill) */
+    .slide-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: clamp(10px, 1.4vh, 14px);
+      border-bottom: 1px solid var(--border-light);
+      flex-shrink: 0;
+    }
+
+    .slide--dark .slide-header {
+      border-bottom-color: var(--border-dark);
+    }
+
+    .slide-kicker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+    }
+
+    .slide--dark .slide-kicker {
+      color: var(--text-muted-on-dark);
+    }
+
+    .kicker-act {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .slide--dark .kicker-act {
+      color: var(--color-accent-yellow);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .brand-logo-dark {
+      height: 32px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.42));
+    }
+
+    .brand-logo-dark--lg {
+      height: 40px;
+    }
+
+    .brand-logo-light {
+      height: 34px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 2px 6px rgba(30, 11, 7, 0.16));
+    }
+
+    .seal-80 {
+      width: 86px;
+      height: 86px;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
+      opacity: 0.96;
+      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.38));
+    }
+
+    /* Título de Acción */
+    .title-block {
+      flex-shrink: 0;
+    }
+
+    .action-title {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2rem, 3.35vw, 3.05rem);
+      line-height: 1.03;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+      max-width: 24ch;
+    }
+
+    .slide--dark .action-title {
+      letter-spacing: 0.005em;
+    }
+
+    .accent-red { color: var(--color-primary-digital); }
+    .slide--dark .accent-red { color: #FF535B; }
+    .accent-gold { color: var(--color-secondary); }
+    .accent-yellow { color: var(--color-accent-yellow); }
+    .accent-blue { color: var(--color-accent-blue); }
+    .accent-green { color: var(--color-accent-green); }
+
+    /* Lista de 3 Puntos Clave */
+    .points-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(10px, 1.5vh, 16px);
+    }
+
+    .point-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      align-items: start;
+      gap: 12px;
+      font-size: clamp(0.92rem, 1.15vw, 1.06rem);
+      line-height: 1.48;
+      color: var(--text-secondary);
+    }
+
+    .slide--dark .point-item {
+      color: var(--text-muted-on-dark);
+    }
+
+    .point-item strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .slide--dark .point-item strong {
+      color: #FFFFFF;
+    }
+
+    .point-index {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      color: var(--color-primary);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .slide--dark .point-index {
+      color: var(--color-accent-yellow);
+    }
+
+    /* Cards Base */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-soft);
+      padding: clamp(18px, 2.2vh, 26px) clamp(20px, 2vw, 28px);
+      transition: transform 180ms var(--ease-out-expo), box-shadow 180ms var(--ease-out-expo);
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-elevated);
+    }
+
+    .slide--dark .card {
+      background: var(--bg-dark-elevated);
+      border-color: var(--border-dark);
+      box-shadow: 0 14px 32px -12px rgba(0, 0, 0, 0.55);
+    }
+
+    .slide--dark .card:hover {
+      border-color: rgba(218, 193, 116, 0.38);
+      box-shadow: 0 20px 38px -12px rgba(213, 19, 23, 0.25);
+    }
+
+    /* Layouts Reutilizables */
+    .split-50 {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: clamp(24px, 3.2vw, 48px);
+      align-items: center;
+    }
+
+    .split-left {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(16px, 2.4vh, 26px);
+    }
+
+    .visual-stage {
+      height: 100%;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(16px, 2vw, 26px);
+      align-items: stretch;
+      margin: auto 0;
+    }
+
+    .grid-2x2 {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: clamp(12px, 1.6vw, 20px);
+    }
+
+    /* === SLIDE 1: PORTADA HERO === */
+    .hero-layout {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: clamp(24px, 4vw, 56px);
+    }
+
+    .hero-number-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: clamp(10px, 1.8vh, 18px);
+    }
+
+    .hero-counter {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(4.2rem, 8.6vw, 7.6rem);
+      line-height: 0.88;
+      letter-spacing: -0.025em;
+      color: var(--color-accent-yellow);
+      text-shadow: 0 12px 36px rgba(253, 210, 19, 0.16);
+    }
+
+    .hero-counter-label {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-secondary);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-cards-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(10px, 1.2vw, 14px);
+      margin-top: clamp(18px, 2.4vh, 26px);
+    }
+
+    .hero-subcard {
+      background: var(--bg-dark-elevated, #2D140E);
+      border: 1px solid var(--border-dark, rgba(218, 193, 116, 0.28));
+      border-radius: 14px;
+      padding: clamp(12px, 1.5vh, 16px) clamp(12px, 1.2vw, 16px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .hero-subcard:hover {
+      transform: translateY(-2px);
+      border-color: var(--color-secondary);
+    }
+
+    .hero-subcard-title {
+      font-family: var(--font-title, 'Poppins', sans-serif);
+      font-weight: 700;
+      font-size: clamp(0.82rem, 0.92vw, 0.9rem);
+      color: var(--color-accent-yellow, #FDD213);
+      margin-bottom: 4px;
+    }
+
+    .hero-subcard-desc {
+      font-size: clamp(0.74rem, 0.8vw, 0.8rem);
+      color: var(--text-muted-on-dark, #DECFC2);
+      line-height: 1.4;
+    }
+
+    .hero-product-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-product-img {
+      max-width: 95%;
+      max-height: clamp(280px, 44vh, 400px);
+      object-fit: contain;
+      filter: drop-shadow(0 24px 44px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 45px rgba(218, 193, 116, 0.18));
+      animation: floatHero 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatHero {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-10px) rotate(1.5deg);
+      }
+    }
+
+    /* === SLIDE 3: TABLA SEMÁFORO SERP === */
+    .serp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    .serp-table th {
+      text-align: left;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .serp-table td {
+      padding: 13px 12px;
+      border-bottom: 1px solid rgba(20, 13, 9, 0.06);
+      vertical-align: middle;
+    }
+
+    .serp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 0.86rem;
+    }
+
+    .status-swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .health-bar-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .mini-metric {
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .mini-metric-val {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.9rem;
+      line-height: 1;
+      color: var(--color-primary);
+    }
+
+    .mini-metric-lbl {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    /* === SLIDE 5: CONVERSATION MINING HEATMAP === */
+    .topics-cloud {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .topic-tile {
+      border-radius: 16px;
+      padding: 14px 16px;
+      border: 1px solid var(--border-light);
+      background: var(--surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+      transition: transform 180ms var(--ease-out-expo);
+    }
+
+    .topic-tile:hover {
+      transform: translateY(-2px);
+    }
+
+    .topic-tile--hot {
+      grid-column: span 2;
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      border-color: var(--color-accent-yellow);
+    }
+
+    .topic-tile--warm {
+      background: rgba(213, 19, 23, 0.08);
+      border-color: rgba(213, 19, 23, 0.25);
+    }
+
+    .topic-tile--ruby {
+      background: rgba(139, 24, 36, 0.1);
+      border-color: rgba(139, 24, 36, 0.28);
+    }
+
+    .topic-name {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.25rem;
+      line-height: 1.1;
+    }
+
+    .topic-tile--hot .topic-name {
+      font-size: 1.5rem;
+      color: var(--color-accent-yellow);
+    }
+
+    .topic-sub {
+      font-size: 0.76rem;
+      opacity: 0.82;
+    }
+
+    /* === SLIDE 7: PROTOPERSONAS === */
+    .personas-main-flow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(14px, 2.4vh, 24px);
+      min-height: 0;
+      margin-top: clamp(4px, 1vh, 12px);
+    }
+
+    .personas-main-flow .grid-3 {
+      margin: 0;
+    }
+
+    .persona-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .persona-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--color-primary-digital);
+    }
+
+    .persona-card--pack::before {
+      background: linear-gradient(90deg, var(--color-caramel) 0%, var(--color-accent-yellow) 100%);
+    }
+
+    .persona-card--celeste::before {
+      background: linear-gradient(90deg, var(--color-accent-blue) 0%, var(--color-accent-green) 100%);
+    }
+
+    .persona-photo-wrap {
+      width: 100%;
+      height: 162px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #F4E6D6;
+      border: 1px solid rgba(158, 99, 35, 0.16);
+      position: relative;
+    }
+
+    .persona-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      display: block;
+    }
+
+    .persona-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .persona-name {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.65rem;
+      line-height: 1.05;
+    }
+
+    .persona-role {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .persona-quote {
+      font-size: 0.88rem;
+      line-height: 1.48;
+      color: var(--text-primary);
+      padding: 10px 0;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      font-style: italic;
+    }
+
+    .persona-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .persona-meta strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .persona-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .persona-foot strong {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* === SLIDE 8: DAFO === */
+    .dafo-main-flow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(14px, 2.4vh, 24px);
+      min-height: 0;
+      margin-top: clamp(4px, 1vh, 12px);
+    }
+
+    .dafo-wrapper {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: clamp(14px, 1.8vw, 22px);
+      align-items: stretch;
+    }
+
+    .dafo-card {
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-inner, 14px);
+      padding: clamp(13px, 1.7vh, 18px) clamp(15px, 1.4vw, 20px);
+      box-shadow: 0 4px 16px -4px rgba(30, 11, 7, 0.08);
+      border-top: 4px solid #52B07B;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .dafo-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -6px rgba(30, 11, 7, 0.14);
+    }
+
+    .dafo-card--f { border-top-color: #52B07B; }
+    .dafo-card--d { border-top-color: var(--color-primary-digital, #E40014); }
+    .dafo-card--o { border-top-color: #2E79B9; }
+    .dafo-card--a { border-top-color: var(--color-accent-ddl, #AC702D); }
+
+    .dafo-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+
+    .dafo-badge {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+      font-family: var(--font-body);
+      color: #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    .dafo-badge--f { background: #52B07B; }
+    .dafo-badge--d { background: var(--color-primary-digital, #E40014); }
+    .dafo-badge--o { background: #2E79B9; }
+    .dafo-badge--a { background: var(--color-accent-ddl, #AC702D); }
+
+    .dafo-card-title {
+      font-family: var(--font-title, 'Poppins', sans-serif);
+      font-weight: 700;
+      font-size: clamp(0.78rem, 0.88vw, 0.86rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+
+    .dafo-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: clamp(0.74rem, 0.82vw, 0.81rem);
+      line-height: 1.38;
+      color: var(--text-secondary);
+    }
+
+    .dafo-list li {
+      position: relative;
+      padding-left: 12px;
+    }
+
+    .dafo-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.38;
+    }
+
+    .dafo-list strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .dafo-callout {
+      background: linear-gradient(155deg, #32130B 0%, #1A0805 100%);
+      color: var(--text-on-dark);
+      border-radius: var(--radius-inner, 14px);
+      border: 1px solid var(--color-secondary);
+      padding: clamp(16px, 2.2vh, 22px) clamp(16px, 1.8vw, 24px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 16px 36px -12px rgba(30, 11, 7, 0.5);
+      position: relative;
+    }
+
+    .dafo-callout-kicker {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--color-secondary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .dafo-callout-number {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.8rem, 4.4vw, 3.8rem);
+      line-height: 0.95;
+      color: var(--color-accent-yellow);
+      margin: 8px 0 4px;
+      text-shadow: 0 6px 18px rgba(253, 210, 19, 0.15);
+    }
+
+    .dafo-callout-label {
+      font-size: clamp(0.78rem, 0.84vw, 0.84rem);
+      color: var(--text-on-dark);
+      margin-bottom: 12px;
+    }
+
+    .dafo-callout-compare {
+      margin-top: 10px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 246, 237, 0.14);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .dafo-callout-vs {
+      font-size: clamp(0.74rem, 0.8vw, 0.8rem);
+      color: var(--text-muted-on-dark);
+    }
+
+    .dafo-callout-advantage {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-title, 'Poppins', sans-serif);
+      font-weight: 800;
+      font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+      color: #52B07B;
+      letter-spacing: 0.02em;
+      margin-top: 2px;
+    }
+
+    /* === SLIDE 9: SEO ROADMAP 6 MESES === */
+    .seo-main-flow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(20px, 3.2vh, 36px);
+      min-height: 0;
+      margin: auto 0;
+    }
+
+    /* 3 Tarjetas Verticales en Columnas */
+    .seo-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(18px, 2.4vw, 32px);
+      align-items: stretch;
+    }
+
+    .seo-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card, 20px);
+      padding: clamp(22px, 3.2vh, 34px) clamp(20px, 2.2vw, 30px);
+      box-shadow: 0 10px 30px -8px rgba(30, 11, 7, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: clamp(18px, 2.6vh, 28px);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+      position: relative;
+    }
+
+    .seo-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -8px rgba(30, 11, 7, 0.14);
+    }
+
+    .seo-card--1 { border-top: 4px solid var(--color-primary-digital, #E40014); }
+    .seo-card--2 { border-top: 4px solid var(--color-accent-ddl, #AC702D); }
+    .seo-card--3 { border-top: 4px solid #52B07B; }
+
+    .seo-card-badge {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--font-title, 'Poppins', sans-serif);
+      font-weight: 700;
+      font-size: clamp(0.74rem, 0.82vw, 0.84rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .seo-card--1 .seo-card-badge { color: var(--color-primary-digital, #E40014); }
+    .seo-card--2 .seo-card-badge { color: var(--color-accent-ddl, #AC702D); }
+    .seo-card--3 .seo-card-badge { color: #52B07B; }
+
+    .seo-card-title {
+      font-family: var(--font-display, 'Zain', sans-serif);
+      font-weight: 900;
+      font-size: clamp(1.75rem, 2.35vw, 2.4rem);
+      line-height: 1.05;
+      color: var(--text-primary);
+    }
+
+    .seo-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(14px, 2vh, 20px);
+      margin: clamp(18px, 2.6vh, 28px) 0 0;
+      padding-top: clamp(16px, 2.2vh, 22px);
+      border-top: 1px dashed rgba(30, 11, 7, 0.12);
+    }
+
+    .seo-check-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: clamp(0.98rem, 1.15vw, 1.16rem); /* ≥18px */
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+      white-space: nowrap;
+    }
+
+    .seo-check-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(82, 176, 123, 0.16);
+      color: #2E7D32;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .seo-kpi-box {
+      background: #F8F6F4;
+      border: 1px solid rgba(30, 11, 7, 0.08);
+      border-radius: 12px;
+      padding: clamp(10px, 1.4vh, 14px) clamp(14px, 1.4vw, 18px);
+      margin-top: auto;
+      min-height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .seo-kpi-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+
+    .seo-kpi-number {
+      font-family: var(--font-display, 'Zain', sans-serif);
+      font-weight: 900;
+      font-size: clamp(1.75rem, 2.2vw, 2.3rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .seo-card--1 .seo-kpi-number { color: var(--color-primary-digital, #E40014); }
+    .seo-card--2 .seo-kpi-number { color: var(--color-accent-ddl, #AC702D); }
+    .seo-card--3 .seo-kpi-number { color: #2E7D32; }
+
+    .seo-kpi-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 9px;
+      border-radius: var(--radius-pill);
+      font-size: clamp(0.72rem, 0.78vw, 0.8rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .seo-kpi-pill--red {
+      background: rgba(228, 0, 20, 0.12);
+      color: var(--color-primary-digital, #E40014);
+    }
+
+    .seo-kpi-pill--gold {
+      background: rgba(172, 112, 45, 0.14);
+      color: var(--color-accent-ddl, #AC702D);
+    }
+
+    .seo-kpi-pill--green {
+      background: rgba(82, 176, 123, 0.22);
+      color: #2E7D32;
+    }
+
+    .seo-kpi-label {
+      font-size: clamp(0.72rem, 0.78vw, 0.8rem);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    /* === SLIDE 10: SEM + MOCKUP RSA === */
+    .rsa-mockup {
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .rsa-url {
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .rsa-headline {
+      font-size: 1.06rem;
+      font-weight: 600;
+      color: #1A0DAB;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .rsa-desc {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    /* === SLIDE 11: DEFENSA + GEO 3 CAPAS === */
+    .layers-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .layer-box {
+      border-radius: 18px;
+      padding: 18px 22px;
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      align-items: center;
+      gap: 16px;
+      border: 1px solid var(--border-dark);
+      background: var(--bg-dark-elevated);
+      transition: transform 180ms var(--ease-out-expo);
+    }
+
+    .layer-box:hover {
+      transform: translateX(6px);
+      border-color: var(--color-secondary);
+    }
+
+    /* === SLIDE 12: TIKTOK SHOWCASE === */
+    .tiktok-showcase {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .tiktok-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tiktok-phone {
+      width: 240px;
+      height: 426px;
+      border-radius: 28px;
+      background: #0F0A07;
+      border: 5px solid #2C211B;
+      box-shadow: 0 22px 44px -14px rgba(20, 13, 9, 0.35);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .tiktok-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tiktok-mockup-img {
+      height: 426px;
+      width: auto;
+      display: block;
+      border-radius: 24px;
+      filter: drop-shadow(0 20px 34px rgba(20, 13, 9, 0.25));
+    }
+
+    .tiktok-caption {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* === SLIDE 13: EMBUDO SEMANAL === */
+    .funnel-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .funnel-tier {
+      height: 54px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      color: #FFFFFF;
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: 0 8px 20px -10px rgba(20, 13, 9, 0.28);
+      transition: transform 180ms var(--ease-out-expo);
+    }
+
+    .funnel-tier:hover {
+      transform: scale(1.015);
+    }
+
+    /* === SLIDE 14: PIEZAS CREATIVAS === */
+    .creative-main-flow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(14px, 2.4vh, 24px);
+      min-height: 0;
+    }
+
+    .creative-main-flow .grid-3 {
+      margin: 0;
+    }
+
+    .creative-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 20px;
+    }
+
+    .creative-media {
+      height: 270px;
+      border-radius: 14px;
+      background: #F4E6D6;
+      border: 1px solid rgba(158, 99, 35, 0.16);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .creative-media--video {
+      background: #1E0B07;
+      border-color: rgba(30, 11, 7, 0.25);
+    }
+
+    .creative-media img,
+    .creative-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .carousel-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .mini-nav-btns {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mini-btn {
+      appearance: none;
+      border: 1px solid var(--border-light);
+      background: var(--bg-light);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: background-color 140ms ease, color 140ms ease;
+    }
+
+    .mini-btn:hover {
+      background: var(--color-primary-digital);
+      border-color: var(--color-primary-digital);
+      color: #FFFFFF;
+    }
+
+    .mini-btn:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    /* === SLIDE 15: KPIs DASHBOARD === */
+    .kpi-main-flow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(14px, 2.4vh, 24px);
+      min-height: 0;
+    }
+
+    .kpi-main-flow .grid-3 {
+      margin: 0;
+    }
+
+    .kpi-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 290px;
+      border-top-width: 4px;
+    }
+
+    .kpi-big {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.6rem, 4vw, 3.6rem);
+      line-height: 0.95;
+    }
+
+    /* === SLIDE 16: CIERRE === */
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .seal-80-rotating {
+      width: clamp(84px, 10vh, 105px);
+      height: clamp(84px, 10vh, 105px);
+      object-fit: contain;
+      animation: spinSlow 34s linear infinite;
+      filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.45));
+      will-change: transform;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .seal-80-rotating {
+        animation: none;
+      }
+    }
+
+    .closing-center {
+      flex: 1;
+      display: grid;
+      grid-template-rows: 1fr auto 1fr;
+      align-items: center;
+      width: 100%;
+      min-height: 0;
+    }
+
+    .closing-top-cluster {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      align-self: end;
+      gap: 8px;
+      padding-bottom: clamp(10px, 1.6vh, 16px);
+    }
+
+    .history-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 246, 237, 0.45);
+      background: rgba(255, 255, 255, 0.05);
+      font-size: clamp(0.72rem, 0.78vw, 0.8rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #FFF6ED;
+      text-transform: uppercase;
+    }
+
+    .closing-quote {
+      font-family: var(--font-display, 'Zain', sans-serif);
+      font-weight: 900;
+      font-size: clamp(3rem, 5.5vw, 4.6rem);
+      line-height: 1.04;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0 auto;
+      letter-spacing: -0.01em;
+    }
+
+    .closing-bottom-cluster {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: start;
+      gap: clamp(8px, 1.2vh, 14px);
+      padding-top: clamp(10px, 1.6vh, 16px);
+    }
+
+    .closing-action {
+      font-size: clamp(0.96rem, 1.08vw, 1.12rem);
+      color: #FDD213;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      max-width: 960px;
+      padding-top: 14px;
+      margin-top: clamp(34px, 5vh, 52px);
+      border-top: 1px solid rgba(255, 246, 237, 0.12);
+      font-size: clamp(0.76rem, 0.82vw, 0.84rem);
+    }
+
+    .team-header {
+      font-size: clamp(0.74rem, 0.8vw, 0.8rem);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 246, 237, 0.72);
+    }
+
+    .team-roles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 20px;
+      color: rgba(255, 246, 237, 0.52);
+      font-weight: 400;
+    }
+
+    /* === CONTROLES FLOTANTES === */
+    .controls-bar {
+      position: fixed;
+      right: clamp(16px, 2.5vw, 32px);
+      bottom: clamp(14px, 2vh, 24px);
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
+      border-radius: var(--radius-pill);
+      background: rgba(20, 13, 9, 0.86);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(218, 193, 116, 0.28);
+      box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.45);
+    }
+
+    .ctrl-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: #FFF6ED;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: background-color 150ms ease, color 150ms ease, opacity 150ms ease;
+    }
+
+    .ctrl-btn:hover:not(:disabled) {
+      background: var(--color-primary-digital);
+      color: #FFFFFF;
+    }
+
+    .ctrl-btn:focus-visible {
+      outline: 2px solid var(--color-accent-yellow);
+      outline-offset: 2px;
+    }
+
+    .ctrl-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .ctrl-btn--icon {
+      padding: 8px 10px;
+    }
+
+    .slide-counter {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-secondary);
+      padding: 0 8px;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-layout,
+      .split-50,
+      .dafo-wrapper {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .grid-3,
+      .timeline-track,
+      .seo-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .topics-cloud {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slide, .progress-fill, .card, .layer-box, .funnel-tier {
+        transition: none !important;
+      }
+    }
+
+    /* === MODO IMPRESIÓN / PDF === */
+    @media print {
+      @page {
+        size: landscape;
+        margin: 0;
+      }
+      html, body {
+        width: auto;
+        height: auto;
+        overflow: visible !important;
+        background: #FFFFFF;
+      }
+      .progress-track,
+      .controls-bar {
+        display: none !important;
+      }
+      .deck {
+        width: auto;
+        height: auto;
+        overflow: visible !important;
+      }
+      .slide {
+        position: relative !important;
+        inset: auto !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        page-break-after: always;
+        break-after: page;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .slide:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de progreso superior 4px -->
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <main class="deck" id="deck" aria-roledescription="presentación">
+
+    <!-- =========================================================
+         SLIDE 1 — PORTADA / HOOK (ACTO I — SITUATION)
+         ========================================================= -->
+    <section class="slide slide--dark is-active" data-slide="1" aria-label="Diapositiva 1: Portada">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <svg class="brand-wave" viewBox="0 0 1440 96" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,44 C260,8 480,82 760,36 C1040,-6 1240,68 1440,28 L1440,96 L0,96 Z" fill="#4A1E13" fill-opacity="0.72"/>
+        <path d="M0,62 C320,96 580,22 880,58 C1140,90 1320,34 1440,52 L1440,96 L0,96 Z" fill="#9E6323" fill-opacity="0.34"/>
+      </svg>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto I · Situation</span>
+            <span aria-hidden="true">·</span>
+            <span>TP Integrador Marketing Digital · Grupo 2</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-dark brand-logo-dark--lg" />
+          </div>
+        </header>
+
+        <div class="hero-layout">
+          <div>
+            <div class="hero-number-wrap">
+              <div class="hero-counter tabular-nums" id="heroCounter">4.000.000</div>
+              <div class="hero-counter-label">unidades producidas por día en Spegazzini · Líder nacional en volumen</div>
+            </div>
+            <h1 class="action-title" style="max-width: 20ch;">4 millones de alfajores por día y cero anuncios digitales</h1>
+
+            <div class="hero-cards-row">
+              <div class="hero-subcard">
+                <div class="hero-subcard-title">Liderazgo en Volumen</div>
+                <div class="hero-subcard-desc">Marca más vendida de Argentina sin pauta paga activa.</div>
+              </div>
+              <div class="hero-subcard">
+                <div class="hero-subcard-title">Presencia Nula</div>
+                <div class="hero-subcard-desc">0 anuncios en Google Ads y Meta Ads.</div>
+              </div>
+              <div class="hero-subcard">
+                <div class="hero-subcard-title">Oportunidad Histórica</div>
+                <div class="hero-subcard-desc">Estructurar captación B2B y blindar la marca.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-product-wrap">
+            <img src="assets/producto-oro.png" alt="Alfajor Guaymallén de Oro" class="hero-product-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 2 — LA PARADOJA COMERCIAL (ACTO I — SITUATION)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="2" aria-label="Diapositiva 2: La Paradoja Comercial">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto I · Situation</span>
+            <span aria-hidden="true">·</span>
+            <span>La Paradoja Comercial</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title">El alfajor más vendido tiene la <span class="accent-red">peor presencia digital</span></h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Tracción cultural masiva</strong> sin infraestructura de marketing.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Engagement del 16,6%</strong> en Instagram (estándar del mercado: 5%).</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Earned Media enorme</strong> pero sin canales propios de captura.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="card">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+                <span style="font-family:var(--font-display); font-weight:900; font-size:1.35rem;">Engagement Rate en Instagram</span>
+                <span class="tabular-nums" style="font-size:0.82rem; color:var(--text-secondary);">3,3× sobre el mercado</span>
+              </div>
+              <svg viewBox="0 0 460 250" width="100%" role="img" aria-label="Comparación Engagement Guaymallén 16,6% versus estándar del mercado 5%">
+                <line x1="40" y1="205" x2="430" y2="205" stroke="#464340" stroke-opacity="0.25" stroke-width="1.5"/>
+                <line x1="40" y1="145" x2="430" y2="145" stroke="#464340" stroke-opacity="0.1" stroke-dasharray="4 4"/>
+                <line x1="40" y1="85" x2="430" y2="85" stroke="#464340" stroke-opacity="0.1" stroke-dasharray="4 4"/>
+                <line x1="40" y1="25" x2="430" y2="25" stroke="#464340" stroke-opacity="0.1" stroke-dasharray="4 4"/>
+
+                <!-- Barra Guaymallén 16.6% -->
+                <rect x="95" y="38" width="105" height="167" rx="14" fill="#E40014"/>
+                <text x="147.5" y="28" text-anchor="middle" fill="#D51317" font-family="Zain, sans-serif" font-weight="900" font-size="26">16,6%</text>
+                <text x="147.5" y="232" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-weight="600" font-size="13">Guaymallén</text>
+
+                <!-- Barra Estándar 5% -->
+                <rect x="265" y="155" width="105" height="50" rx="12" fill="#464340" fill-opacity="0.32"/>
+                <text x="317.5" y="143" text-anchor="middle" fill="#464340" font-family="Zain, sans-serif" font-weight="900" font-size="24">5,0%</text>
+                <text x="317.5" y="232" text-anchor="middle" fill="#464340" font-family="Poppins, sans-serif" font-weight="500" font-size="13">Estándar mercado</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 3 — DIAGNÓSTICO WEB (ACTO II — COMPLICATION)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="3" aria-label="Diapositiva 3: Diagnóstico Web">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto II · Complication</span>
+            <span aria-hidden="true">·</span>
+            <span>Diagnóstico Web y SEO Técnico</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title">Puesto #1 en su marca, <span class="accent-red">invisible en todo lo demás</span></h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>"Alfajores Guaymallén" → Puesto 1,</strong> pero "Comprar alfajores" → &gt;50.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Score de salud web: 59/100</strong> por errores de estructura HTML.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Meta Description mutilada</strong> (281 caracteres vs. 160 recomendados).</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="card">
+              <table class="serp-table">
+                <thead>
+                  <tr>
+                    <th>Keyword analizada</th>
+                    <th>Posición SERP</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody class="tabular-nums">
+                  <tr>
+                    <td><strong>alfajores guaymallén</strong></td>
+                    <td><strong>#1</strong></td>
+                    <td><span class="status-tag"><span class="status-swatch" style="background:#52B07B;"></span>Óptimo</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>guaymapack mayorista</strong></td>
+                    <td>#18</td>
+                    <td><span class="status-tag"><span class="status-swatch" style="background:#FDD213;"></span>Mejorable</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>alfajores</strong></td>
+                    <td>#38</td>
+                    <td><span class="status-tag"><span class="status-swatch" style="background:#E40014;"></span>Crítico</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>comprar alfajores</strong></td>
+                    <td><strong>&gt;50</strong></td>
+                    <td><span class="status-tag"><span class="status-swatch" style="background:#E40014;"></span>Invisible</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="health-bar-grid">
+                <div class="mini-metric">
+                  <div class="mini-metric-val tabular-nums">59 / 100</div>
+                  <div class="mini-metric-lbl">Score de salud técnica web</div>
+                </div>
+                <div class="mini-metric">
+                  <div class="mini-metric-val tabular-nums">281 <span style="font-size:1rem; color:var(--text-secondary);">/ 160</span></div>
+                  <div class="mini-metric-lbl">Caracteres Meta Description</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 4 — BRAND CONQUESTING (ACTO II — COMPLICATION)
+         ========================================================= -->
+    <section class="slide slide--dark" data-slide="4" aria-label="Diapositiva 4: Brand Conquesting">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto II · Complication</span>
+            <span aria-hidden="true">·</span>
+            <span>Amenaza de Brand Conquesting</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-dark" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title"><span class="accent-yellow">Jorgito</span> está pujando con el nombre de Guaymallén</h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Jorgito pauta sobre Guaymallén</strong> desviando tráfico.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Havanna: 70 anuncios · Arcor: +400</strong> · Guaymallén: 0.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Cada día sin campaña defensiva</strong> equivale a tráfico cedido.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="card">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px;">
+                <span style="font-family:var(--font-display); font-weight:900; font-size:1.35rem; color:#FFFFFF;">Anuncios activos por marca</span>
+                <span style="font-size:0.8rem; color:var(--text-muted-on-dark);">Meta &amp; Google Ads Library</span>
+              </div>
+              <svg viewBox="0 0 480 255" width="100%" role="img" aria-label="Gráfico de barras horizontal de anuncios activos por marca">
+                <!-- Arcor -->
+                <text x="0" y="34" fill="#D6C7BC" font-family="Poppins, sans-serif" font-size="13" font-weight="600">Arcor</text>
+                <rect x="105" y="18" width="315" height="24" rx="8" fill="#6AAEE7" fill-opacity="0.85"/>
+                <text x="430" y="35" fill="#FFFFFF" font-family="Zain, sans-serif" font-weight="900" font-size="20">400+</text>
+
+                <!-- Havanna -->
+                <text x="0" y="84" fill="#D6C7BC" font-family="Poppins, sans-serif" font-size="13" font-weight="600">Havanna</text>
+                <rect x="105" y="68" width="135" height="24" rx="8" fill="#DAC174"/>
+                <text x="250" y="85" fill="#FFFFFF" font-family="Zain, sans-serif" font-weight="900" font-size="20">70</text>
+
+                <!-- Rapanui -->
+                <text x="0" y="134" fill="#D6C7BC" font-family="Poppins, sans-serif" font-size="13" font-weight="600">Rapanui</text>
+                <rect x="105" y="118" width="66" height="24" rx="8" fill="#969B9E"/>
+                <text x="181" y="135" fill="#FFFFFF" font-family="Zain, sans-serif" font-weight="900" font-size="20">23</text>
+
+                <!-- Jorgito -->
+                <text x="0" y="184" fill="#FDD213" font-family="Poppins, sans-serif" font-size="13" font-weight="700">Jorgito</text>
+                <rect x="105" y="168" width="50" height="24" rx="8" fill="#FDD213"/>
+                <text x="165" y="185" fill="#FDD213" font-family="Zain, sans-serif" font-weight="900" font-size="20">16 (conquesting)</text>
+
+                <!-- Guaymallén -->
+                <text x="0" y="234" fill="#FF535B" font-family="Poppins, sans-serif" font-size="13" font-weight="700">Guaymallén</text>
+                <rect x="105" y="218" width="6" height="24" rx="3" fill="#E40014"/>
+                <text x="122" y="235" fill="#FF535B" font-family="Zain, sans-serif" font-weight="900" font-size="22">0 anuncios activos</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 5 — CONVERSATION MINING (ACTO II — COMPLICATION)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="5" aria-label="Diapositiva 5: Conversation Mining">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto II · Complication</span>
+            <span aria-hidden="true">·</span>
+            <span>Conversation Mining Orgánico</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50" style="grid-template-columns: 0.82fr 1.18fr;">
+          <div class="split-left">
+            <h2 class="action-title"><span class="accent-red">10 temas</span> dominan la conversación orgánica de la marca</h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Precio y "bolsillo laburador"</strong> lideran las menciones espontáneas.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Rubí y variedades</strong> generan picos de debate sin pauta previa.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Canal B2B</strong> busca activamente "comprar por mayor".</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="topics-cloud">
+              <div class="topic-tile topic-tile--hot">
+                <div class="topic-name">Precio y "bolsillo laburador"</div>
+                <div class="topic-sub">Tema #1 · Relación costo-satisfacción</div>
+              </div>
+              <div class="topic-tile topic-tile--ruby">
+                <div class="topic-name">Rubí</div>
+                <div class="topic-sub">Debate viral fruta/cacao</div>
+              </div>
+              <div class="topic-tile topic-tile--warm">
+                <div class="topic-name">Mayorista</div>
+                <div class="topic-sub">Búsquedas por bulto B2B</div>
+              </div>
+              <div class="topic-tile topic-tile--warm">
+                <div class="topic-name">Nostalgia</div>
+                <div class="topic-sub">Infancia y recreos</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Membrillo</div>
+                <div class="topic-sub">Fanatismo polarizado</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Triple</div>
+                <div class="topic-sub">Saciedad al paso</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Oro &amp; Platino</div>
+                <div class="topic-sub">Segmento aspiracional</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Kioscos</div>
+                <div class="topic-sub">Disponibilidad barrial</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Caviar</div>
+                <div class="topic-sub">Cultura y memes propios</div>
+              </div>
+              <div class="topic-tile">
+                <div class="topic-name">Stock / Pack</div>
+                <div class="topic-sub">Reposición comercial</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 6 — CAMPO DE BATALLA COMPETITIVO (ACTO II)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="6" aria-label="Diapositiva 6: Mapa Competitivo">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto II · Complication</span>
+            <span aria-hidden="true">·</span>
+            <span>Campo de Batalla Competitivo</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title">6 competidores activos contra una <span class="accent-red">marca dormida</span></h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Havanna:</strong> millones de impresiones con marketing de escasez.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Fantoche:</strong> reconversión digital exitosa desde 2013.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Fulbito:</strong> competidor directo en segmento económico escolar.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="card">
+              <svg viewBox="0 0 480 320" width="100%" role="img" aria-label="Mapa de posicionamiento 2x2 de precio versus presencia digital">
+                <!-- Cuadrantes de fondo -->
+                <rect x="52" y="20" width="194" height="128" rx="10" fill="#52B07B" fill-opacity="0.09"/>
+                <rect x="246" y="20" width="194" height="128" rx="10" fill="#DAC174" fill-opacity="0.12"/>
+                <rect x="52" y="148" width="194" height="128" rx="10" fill="#E40014" fill-opacity="0.08"/>
+                <rect x="246" y="148" width="194" height="128" rx="10" fill="#464340" fill-opacity="0.05"/>
+
+                <!-- Ejes -->
+                <line x1="246" y1="16" x2="246" y2="280" stroke="#140D09" stroke-opacity="0.35" stroke-width="1.5"/>
+                <line x1="48" y1="148" x2="444" y2="148" stroke="#140D09" stroke-opacity="0.35" stroke-width="1.5"/>
+
+                <!-- Etiquetas de Eje -->
+                <text x="246" y="12" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="700">Presencia Digital Alta ▲</text>
+                <text x="246" y="298" text-anchor="middle" fill="#464340" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Presencia Digital Baja ▼</text>
+                <text x="54" y="314" text-anchor="start" fill="#464340" font-family="Poppins, sans-serif" font-size="11" font-weight="600">← Precio Popular</text>
+                <text x="438" y="314" text-anchor="end" fill="#464340" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Precio Premium →</text>
+
+                <!-- Competidores -->
+                <circle cx="385" cy="48" r="10" fill="#AC702D"/>
+                <text x="385" y="72" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Havanna</text>
+
+                <circle cx="340" cy="78" r="8" fill="#8B1824"/>
+                <text x="340" y="99" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Rapanui</text>
+
+                <circle cx="268" cy="58" r="9" fill="#6AAEE7"/>
+                <text x="290" y="54" text-anchor="start" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Arcor</text>
+
+                <circle cx="170" cy="82" r="9" fill="#35120E"/>
+                <text x="170" y="103" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Fantoche</text>
+
+                <circle cx="195" cy="120" r="8" fill="#C2A06B"/>
+                <text x="195" y="139" text-anchor="middle" fill="#140D09" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Jorgito</text>
+
+                <circle cx="95" cy="212" r="7" fill="#464340"/>
+                <text x="95" y="232" text-anchor="middle" fill="#464340" font-family="Poppins, sans-serif" font-size="11" font-weight="600">Fulbito</text>
+
+                <!-- Guaymallén actual + Flecha objetivo -->
+                <defs>
+                  <marker id="arrowGreen" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 10 5 L 0 9 z" fill="#52B07B"/>
+                  </marker>
+                </defs>
+                <line x1="138" y1="224" x2="138" y2="66" stroke="#52B07B" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arrowGreen)"/>
+                <circle cx="138" cy="238" r="14" fill="#E40014" stroke="#FDD213" stroke-width="3"/>
+                <text x="138" y="268" text-anchor="middle" fill="#D51317" font-family="Zain, sans-serif" font-weight="900" font-size="16">Guaymallén Hoy</text>
+                <text x="138" y="50" text-anchor="middle" fill="#52B07B" font-family="Zain, sans-serif" font-weight="900" font-size="15">Objetivo Digital</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 7 — PROTOPERSONAS (ACTO III — QUESTION)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="7" aria-label="Diapositiva 7: Tres Protopersonas">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto III · Question</span>
+            <span aria-hidden="true">·</span>
+            <span>Audiencias Prioritarias</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="personas-main-flow">
+          <div class="title-block">
+            <h2 class="action-title">Diseñamos para <span class="accent-red">Martina, Diego y Laura</span></h2>
+          </div>
+
+          <div class="grid-3">
+          <!-- Martina -->
+          <article class="card persona-card">
+            <div class="persona-photo-wrap">
+              <img src="assets/aistudio/proto1_f64440ef.png" alt="Martina, 22 años, estudiante comprando Guaymallén en un kiosco 24 hs" class="persona-photo" />
+            </div>
+            <div>
+              <div class="persona-head">
+                <h3 class="persona-name">Martina <span class="tabular-nums" style="color:var(--color-primary);">22</span></h3>
+              </div>
+              <div class="persona-role">Estudiante · Compra impulsiva en kioscos</div>
+            </div>
+            <p class="persona-quote">“Entre cursadas busco algo rico, rápido y que no me rompa el presupuesto de la semana.”</p>
+            <div class="persona-meta">
+              <div><strong>Motivación:</strong> Antojo accesible al paso</div>
+              <div><strong>Contenido clave:</strong> Humor nativo y sabores</div>
+            </div>
+            <div class="persona-foot">
+              <span>Canal principal</span>
+              <strong>TikTok · Reels · Kioscos de paso</strong>
+            </div>
+          </article>
+
+          <!-- Diego -->
+          <article class="card persona-card persona-card--pack">
+            <div class="persona-photo-wrap">
+              <img src="assets/aistudio/proto2_d585fba5.png" alt="Diego, 38 años, comerciante con stock de alfajores en estación de tren" class="persona-photo" />
+            </div>
+            <div>
+              <div class="persona-head">
+                <h3 class="persona-name">Diego <span class="tabular-nums" style="color:var(--color-caramel);">38</span></h3>
+              </div>
+              <div class="persona-role">Vendedor ambulante · Compra por bulto B2B</div>
+            </div>
+            <p class="persona-quote">“Necesito reponer cajas de alta rotación al mejor precio mayorista sin perder tiempo.”</p>
+            <div class="persona-meta">
+              <div><strong>Motivación:</strong> Margen y stock garantizado</div>
+              <div><strong>Contenido clave:</strong> Búsqueda Guaymapack</div>
+            </div>
+            <div class="persona-foot">
+              <span>Canal principal</span>
+              <strong style="color:var(--color-caramel);">WhatsApp B2B · Distribuidor / Mayorista</strong>
+            </div>
+          </article>
+
+          <!-- Laura -->
+          <article class="card persona-card persona-card--celeste">
+            <div class="persona-photo-wrap">
+              <img src="assets/aistudio/proto3_dd7c8e66.png" alt="Laura, 42 años, madre con pack familiar Guaymallén Triple en su cocina" class="persona-photo" />
+            </div>
+            <div>
+              <div class="persona-head">
+                <h3 class="persona-name">Laura <span class="tabular-nums" style="color:var(--color-accent-green);">42</span></h3>
+              </div>
+              <div class="persona-role">Madre · Compra familiar por rendimiento</div>
+            </div>
+            <p class="persona-quote">“Para la vianda escolar compro packs que rindan toda la semana y les gusten a todos.”</p>
+            <div class="persona-meta">
+              <div><strong>Motivación:</strong> Rendimiento y variedad</div>
+              <div><strong>Contenido clave:</strong> Packs familiares y recetas</div>
+            </div>
+            <div class="persona-foot">
+              <span>Canal principal</span>
+              <strong style="color:var(--color-accent-green);">Meta (IG/FB) · Supermercado</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- =========================================================
+         SLIDE 8 — MATRIZ DAFO (ACTO III — QUESTION)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="8" aria-label="Diapositiva 8: Matriz DAFO">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto III · Question</span>
+            <span aria-hidden="true">·</span>
+            <span>Diagnóstico Estratégico DAFO</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="dafo-main-flow">
+          <div class="title-block">
+            <h2 class="action-title">Fortalezas enormes, debilidades <span class="accent-red">todas corregibles</span></h2>
+          </div>
+
+          <div class="dafo-wrapper">
+          <div class="grid-2x2">
+            <div class="card dafo-card dafo-card--f">
+              <div class="dafo-header">
+                <span class="dafo-badge dafo-badge--f">F</span>
+                <span class="dafo-card-title">Fortalezas</span>
+              </div>
+              <ul class="dafo-list">
+                <li><strong>Liderazgo en volumen:</strong> 4M alfajores/día en Spegazzini.</li>
+                <li><strong>Precio-calidad:</strong> Insuperable relación y fidelidad popular.</li>
+                <li><strong>Engagement orgánico:</strong> 16,6% en IG (récord de categoría).</li>
+              </ul>
+            </div>
+
+            <div class="card dafo-card dafo-card--d">
+              <div class="dafo-header">
+                <span class="dafo-badge dafo-badge--d">D</span>
+                <span class="dafo-card-title">Debilidades</span>
+              </div>
+              <ul class="dafo-list">
+                <li><strong>0 pauta digital:</strong> Inexistencia de anuncios en Meta y Google.</li>
+                <li><strong>Salud web 59/100:</strong> Errores técnicos y SEO genérico roto.</li>
+                <li><strong>Canales vacíos:</strong> Sin cuenta oficial en TikTok ni YouTube.</li>
+              </ul>
+            </div>
+
+            <div class="card dafo-card dafo-card--o">
+              <div class="dafo-header">
+                <span class="dafo-badge dafo-badge--o">O</span>
+                <span class="dafo-card-title">Oportunidades</span>
+              </div>
+              <ul class="dafo-list">
+                <li><strong>Efecto sustitución:</strong> Viraje del consumo a marcas accesibles.</li>
+                <li><strong>Ventaja en Search:</strong> Arbitraje CPC ($14,99 en Google Ads).</li>
+                <li><strong>Canal B2B digital:</strong> Captación directa mayorista y kioscos.</li>
+              </ul>
+            </div>
+
+            <div class="card dafo-card dafo-card--a">
+              <div class="dafo-header">
+                <span class="dafo-badge dafo-badge--a">A</span>
+                <span class="dafo-card-title">Amenazas</span>
+              </div>
+              <ul class="dafo-list">
+                <li><strong>Brand Conquesting:</strong> Jorgito puja sobre keywords Guaymallén.</li>
+                <li><strong>Presión 360°:</strong> Presupuestos masivos de Arcor y Havanna.</li>
+                <li><strong>Fuga de audiencia joven:</strong> La Gen Z consume medios donde la marca no está.</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="dafo-callout">
+            <div class="dafo-callout-kicker">Ventaja Arbitrada de CPC</div>
+            <div class="tabular-nums dafo-callout-number">$14,99</div>
+            <div class="dafo-callout-label">Costo por Clic estimado para Guaymallén</div>
+
+            <div class="dafo-callout-compare">
+              <div class="dafo-callout-vs">Frente a los $59,95 que hoy paga Jorgito</div>
+              <div class="dafo-callout-advantage">4X MÁS ECONÓMICO</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- =========================================================
+         SLIDE 9 — SEO CIMIENTOS DIGITALES (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="9" aria-label="Diapositiva 9: Plan SEO 6 Meses">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Estrategia SEO Técnico &amp; Contenido</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="seo-main-flow">
+          <div class="title-block">
+            <h2 class="action-title">De posición <span class="accent-red">38 al Top 5</span> en 6 meses</h2>
+          </div>
+
+          <!-- TRES TARJETAS VERTICALES EN COLUMNAS -->
+          <div class="seo-cards-grid">
+            <!-- TARJETA 1 (Acento Rojo) -->
+            <article class="card seo-card seo-card--1">
+              <div class="seo-card-top">
+                <div class="seo-card-badge">MES 1 – 2 · CIMIENTOS</div>
+                <h3 class="seo-card-title">SEO Técnico</h3>
+                <ul class="seo-checklist">
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Jerarquía HTML y H1 único</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Meta tags con CTA</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Velocidad móvil (&lt;150 ms)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="seo-kpi-box">
+                <div class="seo-kpi-row">
+                  <div class="seo-kpi-number tabular-nums">59 → 85+</div>
+                  <span class="seo-kpi-pill seo-kpi-pill--red">▲ +26 pts</span>
+                </div>
+                <div class="seo-kpi-label">SALUD WEB</div>
+              </div>
+            </article>
+
+            <!-- TARJETA 2 (Acento Dorado) -->
+            <article class="card seo-card seo-card--2">
+              <div class="seo-card-top">
+                <div class="seo-card-badge">MES 3 – 4 · AUTORIDAD</div>
+                <h3 class="seo-card-title">Contenido E-E-A-T</h3>
+                <ul class="seo-checklist">
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>5 notas de autoridad</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Landing /mayoristas</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Enlazado interno a packs</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="seo-kpi-box">
+                <div class="seo-kpi-row">
+                  <div class="seo-kpi-number tabular-nums">#38 → #12</div>
+                  <span class="seo-kpi-pill seo-kpi-pill--gold">▲ +26 pos</span>
+                </div>
+                <div class="seo-kpi-label">SERP 'ALFAJORES'</div>
+              </div>
+            </article>
+
+            <!-- TARJETA 3 (Acento Verde) -->
+            <article class="card seo-card seo-card--3">
+              <div class="seo-card-top">
+                <div class="seo-card-badge">MES 5 – 6 · CONSOLIDACIÓN</div>
+                <h3 class="seo-card-title">Resultados Top 5</h3>
+                <ul class="seo-checklist">
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Top 5 en búsquedas genéricas</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Captación de leads B2B</span>
+                  </li>
+                  <li class="seo-check-item">
+                    <span class="seo-check-icon">✓</span>
+                    <span>Optimización de conversión</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="seo-kpi-box">
+                <div class="seo-kpi-row">
+                  <div class="seo-kpi-number tabular-nums">Top 5</div>
+                  <span class="seo-kpi-pill seo-kpi-pill--green">★ Objetivo</span>
+                </div>
+                <div class="seo-kpi-label">POSICIÓN ORGÁNICA</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 10 — SEM PIVOT B2B (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="10" aria-label="Diapositiva 10: Estrategia SEM B2B">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Estrategia SEM B2B</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title">Con <span class="accent-red">$14,99 por clic</span> captamos mayoristas que Jorgito paga $59,95</h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Campaña Google Ads</strong> en Red de Búsqueda (RSA).</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Foco B2B:</strong> kiosqueros y distribuidores para <strong>Guaymapack</strong>.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Meta SMART:</strong> +30% tráfico web cualificado en 3 meses.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage" style="gap:16px;">
+            <div class="card">
+              <div style="font-size:0.84rem; font-weight:600; color:var(--text-secondary); margin-bottom:10px;">Eficiencia de presupuesto</div>
+              <svg viewBox="0 0 460 155" width="100%" role="img" aria-label="Comparación de monedas apiladas CPC Guaymallén $14,99 vs Jorgito $59,95">
+                <defs>
+                  <linearGradient id="gold-top" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FFE066"/>
+                    <stop offset="100%" stop-color="#F5B700"/>
+                  </linearGradient>
+                  <linearGradient id="gold-side" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#D99B00"/>
+                    <stop offset="100%" stop-color="#A66E00"/>
+                  </linearGradient>
+                  <linearGradient id="grey-top" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#CFD4D9"/>
+                    <stop offset="100%" stop-color="#A6ACB1"/>
+                  </linearGradient>
+                  <linearGradient id="grey-side" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#80868B"/>
+                    <stop offset="100%" stop-color="#5F6368"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Guaymallén -->
+                <text x="80" y="26" text-anchor="middle" fill="#140D09" font-family="'Poppins', sans-serif" font-weight="700" font-size="13">Guaymallén</text>
+                <ellipse cx="80" cy="104" rx="38" ry="7" fill="rgba(0,0,0,0.07)"/>
+                <path d="M 42 92 A 38 10 0 0 0 118 92 v 10 A 38 10 0 0 1 42 102 Z" fill="url(#gold-side)" stroke="#AC702D" stroke-width="1.2"/>
+                <ellipse cx="80" cy="92" rx="38" ry="10" fill="url(#gold-top)" stroke="#AC702D" stroke-width="1.2"/>
+                <text x="80" y="140" text-anchor="middle" fill="#D51317" font-family="'Zain', sans-serif" font-weight="900" font-size="24">$14,99</text>
+
+                <!-- Centro: 4× más clics -->
+                <text x="230" y="84" text-anchor="middle" fill="#2E7D32" font-family="'Zain', sans-serif" font-weight="900" font-size="32">4× más clics</text>
+
+                <!-- Jorgito 4 monedas -->
+                <text x="380" y="26" text-anchor="middle" fill="#464340" font-family="'Poppins', sans-serif" font-weight="700" font-size="13">Jorgito</text>
+                <ellipse cx="380" cy="104" rx="38" ry="7" fill="rgba(0,0,0,0.07)"/>
+                <path d="M 342 92 A 38 10 0 0 0 418 92 v 10 A 38 10 0 0 1 342 102 Z" fill="url(#grey-side)" stroke="#55595C" stroke-width="1.2"/>
+                <ellipse cx="380" cy="92" rx="38" ry="10" fill="url(#grey-top)" stroke="#55595C" stroke-width="1.2"/>
+
+                <path d="M 342 78 A 38 10 0 0 0 418 78 v 10 A 38 10 0 0 1 342 88 Z" fill="url(#grey-side)" stroke="#55595C" stroke-width="1.2"/>
+                <ellipse cx="380" cy="78" rx="38" ry="10" fill="url(#grey-top)" stroke="#55595C" stroke-width="1.2"/>
+
+                <path d="M 342 64 A 38 10 0 0 0 418 64 v 10 A 38 10 0 0 1 342 74 Z" fill="url(#grey-side)" stroke="#55595C" stroke-width="1.2"/>
+                <ellipse cx="380" cy="64" rx="38" ry="10" fill="url(#grey-top)" stroke="#55595C" stroke-width="1.2"/>
+
+                <path d="M 342 50 A 38 10 0 0 0 418 50 v 10 A 38 10 0 0 1 342 60 Z" fill="url(#grey-side)" stroke="#55595C" stroke-width="1.2"/>
+                <ellipse cx="380" cy="50" rx="38" ry="10" fill="url(#grey-top)" stroke="#55595C" stroke-width="1.2"/>
+
+                <text x="380" y="140" text-anchor="middle" fill="#464340" font-family="'Zain', sans-serif" font-weight="900" font-size="24">$59,95</text>
+              </svg>
+            </div>
+
+            <div class="rsa-mockup">
+              <div class="rsa-url">Patrocinado · https://www.alfajoresguaymallen.com.ar/guaymapack</div>
+              <div class="rsa-headline">Alfajores Guaymallén por Mayor | Guaymapack Directo de Fábrica</div>
+              <div class="rsa-desc">Abastecé tu kiosco o distribuidora con el alfajor #1 de Argentina. Cajas x24 y packs mayoristas con entrega rápida.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 11 — DEFENSA DE MARCA + GEO (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--dark" data-slide="11" aria-label="Diapositiva 11: Defensa de Marca y GEO">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Defensa de Marca + GEO</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-dark" />
+          </div>
+        </header>
+
+        <div class="split-50">
+          <div class="split-left">
+            <h2 class="action-title">Blindamos la marca en Google y <span class="accent-yellow">preparamos para la era IA</span></h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Anuncio defensivo</strong> bloquea el brand conquesting de Jorgito.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Schema.org (Product + FAQ)</strong> para ganar Rich Snippets.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>GEO:</strong> marcado de entidad para ChatGPT, Gemini y Perplexity.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="layers-stack">
+              <div class="layer-box" style="border-color: rgba(228, 0, 20, 0.55);">
+                <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+                  <path d="M21 4 L35 10 V21 C35 30 28 36 21 39 C14 36 7 30 7 21 V10 Z" fill="#D51317" stroke="#DAC174" stroke-width="2"/>
+                </svg>
+                <div>
+                  <div style="font-family:var(--font-display); font-weight:900; font-size:1.3rem; color:#FFFFFF;">Capa 1 · Defensa de Marca</div>
+                  <div style="font-size:0.84rem; color:var(--text-muted-on-dark);">Puja exacta por "Guaymallén" para recuperar clics robados.</div>
+                </div>
+                <span style="font-weight:700; font-size:0.82rem; color:#FF9CAF;">Protección</span>
+              </div>
+
+              <div class="layer-box" style="border-color: rgba(253, 210, 19, 0.45);">
+                <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+                  <rect x="6" y="8" width="30" height="26" rx="6" fill="none" stroke="#FDD213" stroke-width="2.5"/>
+                  <path d="M15 17 L11 21 L15 25 M27 17 L31 21 L27 25 M22 15 L20 27" stroke="#FDD213" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <div style="font-family:var(--font-display); font-weight:900; font-size:1.3rem; color:#FFFFFF;">Capa 2 · SEO Avanzado (Schema)</div>
+                  <div style="font-size:0.84rem; color:var(--text-muted-on-dark);">Datos estructurados de producto, sabores y preguntas frecuentes.</div>
+                </div>
+                <span style="font-weight:700; font-size:0.82rem; color:var(--color-accent-yellow);">Posicionamiento</span>
+              </div>
+
+              <div class="layer-box" style="border-color: rgba(106, 174, 231, 0.55);">
+                <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+                  <circle cx="21" cy="21" r="14" fill="none" stroke="#6AAEE7" stroke-width="2.2"/>
+                  <circle cx="21" cy="21" r="4" fill="#6AAEE7"/>
+                  <path d="M21 7 V13 M21 29 V35 M7 21 H13 M29 21 H35" stroke="#6AAEE7" stroke-width="2"/>
+                </svg>
+                <div>
+                  <div style="font-family:var(--font-display); font-weight:900; font-size:1.3rem; color:#FFFFFF;">Capa 3 · GEO (Generative Engine)</div>
+                  <div style="font-size:0.84rem; color:var(--text-muted-on-dark);">Autoridad semántica para respuestas en buscadores conversacionales.</div>
+                </div>
+                <span style="font-weight:700; font-size:0.82rem; color:var(--color-accent-blue);">Futuro IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 12 — TIKTOK (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="12" aria-label="Diapositiva 12: Estrategia TikTok">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Estrategia Creativa en TikTok</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50" style="grid-template-columns: 0.85fr 1.15fr;">
+          <div class="split-left">
+            <h2 class="action-title"><span class="accent-red">Shitposting corporativo</span> que convierte engagement en comunidad</h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Estrategia nativa:</strong> humor autocrítico + trastienda industrial de fábrica.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Meta SMART:</strong> +35% menciones positivas orgánicas en 3 meses.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>UGC + co-creación</strong> con audios propios y filtros de marca.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="tiktok-showcase">
+              <div class="tiktok-item">
+                <div class="tiktok-phone">
+                  <video class="tiktok-video" controls playsinline preload="metadata" src="assets/aistudio/martes_-_Matem_tica_del_Antojo_2_ee3d62b9.mp4" aria-label="Reel de TikTok Martes: Matemática del antojo"></video>
+                </div>
+                <span class="tiktok-caption">Martes · Matemática del antojo</span>
+              </div>
+
+              <div class="tiktok-item">
+                <img src="assets/aistudio/miercoles_8946b408.png" alt="Mockup TikTok Miércoles: Backstage en la fábrica de Spegazzini" class="tiktok-mockup-img" />
+                <span class="tiktok-caption">Miércoles · Backstage Spegazzini</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 13 — GRILLA SEMANAL / EMBUDO (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="13" aria-label="Diapositiva 13: Grilla Semanal y Embudo">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Grilla Semanal de Contenidos</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="split-50" style="grid-template-columns: 0.85fr 1.15fr;">
+          <div class="split-left">
+            <h2 class="action-title">Cada día de la semana mueve una <span class="accent-red">palanca del embudo</span></h2>
+            <ul class="points-list">
+              <li class="point-item">
+                <span class="point-index">01</span>
+                <div><strong>Lu:</strong> Interacción · <strong>Ma:</strong> Viralidad · <strong>Mi:</strong> Retención.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">02</span>
+                <div><strong>Ju:</strong> Debate · <strong>Vi:</strong> Comunidad.</div>
+              </li>
+              <li class="point-item">
+                <span class="point-index">03</span>
+                <div><strong>Secuencia diseñada</strong> como embudo de conversión social.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="visual-stage">
+            <div class="funnel-stack">
+              <div class="funnel-tier" style="width:100%; background:#E40014;">
+                <span><strong>Lunes · Interacción</strong> — Carrusel "¿Cuál Guaymallén sos?"</span>
+                <span>Tope de embudo</span>
+              </div>
+              <div class="funnel-tier" style="width:88%; background:#AC702D;">
+                <span><strong>Martes · Viralidad</strong> — Reel "Matemática del antojo"</span>
+                <span>Descubrimiento</span>
+              </div>
+              <div class="funnel-tier" style="width:76%; background:#6AAEE7; color:#140D09;">
+                <span><strong>Miércoles · Retención</strong> — Backstage Spegazzini</span>
+                <span>Consideración</span>
+              </div>
+              <div class="funnel-tier" style="width:64%; background:#8B1824;">
+                <span><strong>Jueves · Debate</strong> — Batalla Rubí vs. Chocolate</span>
+                <span>Preferencia</span>
+              </div>
+              <div class="funnel-tier" style="width:52%; background:#140D09; border:1px solid #DAC174;">
+                <span><strong>Viernes · Comunidad</strong> — UGC &amp; Kioscos</span>
+                <span style="color:#FDD213;">Fidelización</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 14 — PIEZAS CREATIVAS (ACTO IV — ANSWER)
+         ========================================================= -->
+    <section class="slide slide--light" data-slide="14" aria-label="Diapositiva 14: Piezas Creativas Producidas">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto IV · Answer</span>
+            <span aria-hidden="true">·</span>
+            <span>Piezas Listas para Publicar</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-light" />
+          </div>
+        </header>
+
+        <div class="creative-main-flow">
+          <div class="title-block">
+            <h2 class="action-title">De la estrategia a la acción: <span class="accent-red">primeras bajadas creativas</span></h2>
+          </div>
+
+          <div class="grid-3">
+            <!-- Pieza 1: Lunes Carrusel -->
+            <article class="card creative-card">
+              <div class="creative-media">
+                <img id="lunesImg" src="assets/aistudio/lunes_87742364.png" alt="Lámina del carrusel de Lunes: ¿Cuál Guaymallén sos?" />
+              </div>
+              <div>
+                <h3 style="font-family:var(--font-display); font-weight:900; font-size:1.3rem;">Carrusel "¿Cuál Guaymallén sos?"</h3>
+                <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:3px;">Lunes · Test visual de personalidad por sabor para comentarios.</p>
+              </div>
+              <div class="carousel-nav">
+                <span class="tabular-nums" id="lunesCounter" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary);">Lámina 1 / 3</span>
+                <div class="mini-nav-btns">
+                  <button type="button" class="mini-btn" id="lunesPrev" aria-label="Lámina anterior de Lunes">‹</button>
+                  <button type="button" class="mini-btn" id="lunesNext" aria-label="Lámina siguiente de Lunes">›</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pieza 2: Martes Video Real -->
+            <article class="card creative-card">
+              <div class="creative-media creative-media--video">
+                <video controls playsinline preload="metadata" src="assets/aistudio/martes_-_Matem_tica_del_Antojo_2_ee3d62b9.mp4" aria-label="Video de Martes: Matemática del antojo"></video>
+              </div>
+              <div>
+                <h3 style="font-family:var(--font-display); font-weight:900; font-size:1.3rem;">Video "Matemática del antojo"</h3>
+                <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:3px;">Martes · Reel ya producido sobre precio vs. triple satisfacción.</p>
+              </div>
+              <div class="carousel-nav">
+                <span style="font-size:0.78rem; font-weight:600; color:var(--color-primary);">Reel · 0:16</span>
+                <span class="tabular-nums" style="font-size:0.78rem; color:var(--text-secondary);">IG / TikTok</span>
+              </div>
+            </article>
+
+            <!-- Pieza 3: Jueves Carrusel 5 láminas -->
+            <article class="card creative-card">
+              <div class="creative-media">
+                <img id="juevesImg" src="assets/aistudio/jueves1_f5666093.png" alt="Lámina del carrusel de Jueves: Batalla Rubí vs Chocolate" />
+              </div>
+              <div>
+                <h3 style="font-family:var(--font-display); font-weight:900; font-size:1.3rem;">Carrusel "Batalla Rubí vs. Chocolate"</h3>
+                <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:3px;">Jueves · 5 láminas de enfrentamiento directo para debate orgánico.</p>
+              </div>
+              <div class="carousel-nav">
+                <span class="tabular-nums" id="juevesCounter" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary);">Lámina 1 / 5</span>
+                <div class="mini-nav-btns">
+                  <button type="button" class="mini-btn" id="juevesPrev" aria-label="Lámina anterior de Jueves">‹</button>
+                  <button type="button" class="mini-btn" id="juevesNext" aria-label="Lámina siguiente de Jueves">›</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 15 — KPIs DASHBOARD (ACTO V — DESENLACE)
+         ========================================================= -->
+    <section class="slide slide--dark" data-slide="15" aria-label="Diapositiva 15: KPIs de Éxito">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto V · Desenlace</span>
+            <span aria-hidden="true">·</span>
+            <span>Tablero de Métricas y Objetivos SMART</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-dark" />
+          </div>
+        </header>
+
+        <div class="kpi-main-flow">
+          <div class="title-block">
+            <h2 class="action-title"><span class="accent-yellow">3 métricas concretas</span> miden el éxito de toda la estrategia</h2>
+          </div>
+
+          <div class="grid-3">
+            <!-- KPI 1 -->
+            <div class="card kpi-card" style="border-top-color:#6AAEE7;">
+              <div>
+                <div style="font-size:0.84rem; font-weight:600; color:var(--color-accent-blue);">KPI 01 · SEO Orgánico</div>
+                <div class="kpi-big tabular-nums" style="color:#FFFFFF; margin:12px 0 6px;">38 → Top 5</div>
+                <div style="font-size:0.9rem; color:var(--text-muted-on-dark);">Posición para la keyword <strong>"Alfajores"</strong> en 6 meses.</div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.78rem; color:var(--text-muted-on-dark); margin-bottom:6px;">
+                  <span>Horizonte</span><span class="tabular-nums">6 meses</span>
+                </div>
+                <div style="height:10px; border-radius:999px; background:rgba(255,255,255,0.12); overflow:hidden;">
+                  <div style="width:86%; height:100%; background:#6AAEE7; border-radius:999px;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- KPI 2 -->
+            <div class="card kpi-card" style="border-top-color:#FDD213;">
+              <div>
+                <div style="font-size:0.84rem; font-weight:600; color:var(--color-accent-yellow);">KPI 02 · SEM B2B</div>
+                <div class="kpi-big tabular-nums" style="color:var(--color-accent-yellow); margin:12px 0 6px;">+30%</div>
+                <div style="font-size:0.9rem; color:var(--text-muted-on-dark);">Tráfico web <strong>B2B cualificado</strong> (kioscos y mayoristas).</div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.78rem; color:var(--text-muted-on-dark); margin-bottom:6px;">
+                  <span>Horizonte</span><span class="tabular-nums">3 meses</span>
+                </div>
+                <div style="height:10px; border-radius:999px; background:rgba(255,255,255,0.12); overflow:hidden;">
+                  <div style="width:74%; height:100%; background:#FDD213; border-radius:999px;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- KPI 3 -->
+            <div class="card kpi-card" style="border-top-color:#52B07B;">
+              <div>
+                <div style="font-size:0.84rem; font-weight:600; color:#FF9CAF;">KPI 03 · TikTok Comunidad</div>
+                <div class="kpi-big tabular-nums" style="color:#52B07B; margin:12px 0 6px;">+35%</div>
+                <div style="font-size:0.9rem; color:var(--text-muted-on-dark);">Menciones <strong>positivas orgánicas</strong> y UGC de marca.</div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.78rem; color:var(--text-muted-on-dark); margin-bottom:6px;">
+                  <span>Horizonte</span><span class="tabular-nums">3 meses</span>
+                </div>
+                <div style="height:10px; border-radius:999px; background:rgba(255,255,255,0.12); overflow:hidden;">
+                  <div style="width:82%; height:100%; background:#52B07B; border-radius:999px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SLIDE 16 — CIERRE (ACTO V — DESENLACE)
+         ========================================================= -->
+    <section class="slide slide--dark" data-slide="16" aria-label="Diapositiva 16: Cierre">
+      <div class="industrial-grid" aria-hidden="true"></div>
+      <svg class="brand-wave brand-wave--closing" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,48 C240,8 480,88 760,40 C1040,-4 1240,74 1440,32 L1440,120 L0,120 Z" fill="#4A1E13" fill-opacity="0.82"/>
+        <path d="M0,68 C300,110 560,26 860,66 C1120,102 1300,36 1440,56 L1440,120 L0,120 Z" fill="#9E6323" fill-opacity="0.52"/>
+      </svg>
+      <div class="slide-inner">
+        <header class="slide-header">
+          <div class="slide-kicker">
+            <span class="kicker-act">Acto V · Desenlace</span>
+            <span aria-hidden="true">·</span>
+            <span>Cierre Estratégico</span>
+          </div>
+          <div class="brand-lockup">
+            <img src="assets/aistudio/logo-chico_a926d4f2.svg" alt="Alfajores Guaymallén" class="brand-logo-dark brand-logo-dark--lg" />
+          </div>
+        </header>
+
+        <div class="closing-center">
+          <div class="closing-top-cluster">
+            <img src="assets/aistudio/logo-80anios-color.svg" alt="80 años · El alfajor de la familia" class="seal-80-rotating" />
+            <div class="history-badge">80 años en la familia argentina · Nueva etapa digital</div>
+          </div>
+
+          <h2 class="closing-quote">Guaymallén no necesita inventar<br>su historia — <span class="accent-yellow">necesita contarla</span></h2>
+
+          <div class="closing-bottom-cluster">
+            <div class="closing-action">Primer paso concreto: activar la campaña defensiva en Google Ads mañana</div>
+            <div class="team-grid">
+              <div class="team-header">Grupo 2 · TP Integrador Marketing Digital</div>
+              <div class="team-roles">
+                <span>Camila Fecit</span>
+                <span>Carolina Alfonso</span>
+                <span>Carolina Visentin</span>
+                <span>Esmeralda Pantano</span>
+                <span>Federico Frias</span>
+                <span>Iwry Ramalho</span>
+                <span>Sebastián Godoy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Barra de Controles Flotante Discreta -->
+  <nav class="controls-bar" aria-label="Controles de presentación">
+    <button type="button" class="ctrl-btn" id="btnPrev" aria-label="Diapositiva anterior">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      Anterior
+    </button>
+    <span class="slide-counter tabular-nums" id="slideCounter" aria-live="polite">1 / 16</span>
+    <button type="button" class="ctrl-btn" id="btnNext" aria-label="Diapositiva siguiente">
+      Siguiente
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <button type="button" class="ctrl-btn ctrl-btn--icon" id="btnFullscreen" aria-label="Pantalla completa" title="Pantalla completa">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+    </button>
+  </nav>
+
+  <script>
+    (() => {
+      const slides = Array.from(document.querySelectorAll('.slide'));
+      const total = slides.length;
+      const progressFill = document.getElementById('progressFill');
+      const slideCounter = document.getElementById('slideCounter');
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      const btnFullscreen = document.getElementById('btnFullscreen');
+      const heroCounter = document.getElementById('heroCounter');
+
+      let currentIndex = 0;
+
+      function animateCounter() {
+        if (!heroCounter) return;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) {
+          heroCounter.textContent = '4.000.000';
+          return;
+        }
+        const target = 4000000;
+        const duration = 1100;
+        const start = performance.now();
+
+        function step(now) {
+          const elapsed = now - start;
+          const t = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - t, 3);
+          const value = Math.floor(eased * target);
+          heroCounter.textContent = value.toLocaleString('es-AR');
+          if (t < 1) {
+            requestAnimationFrame(step);
+          } else {
+            heroCounter.textContent = '4.000.000';
+          }
+        }
+        requestAnimationFrame(step);
+      }
+
+      function pauseAllVideos() {
+        document.querySelectorAll('video').forEach((v) => {
+          if (!v.paused) v.pause();
+        });
+      }
+
+      function goToSlide(index) {
+        pauseAllVideos();
+        const clamped = Math.max(0, Math.min(total - 1, index));
+        currentIndex = clamped;
+
+        slides.forEach((slide, idx) => {
+          slide.classList.remove('is-active', 'is-prev');
+          if (idx === currentIndex) {
+            slide.classList.add('is-active');
+          } else if (idx < currentIndex) {
+            slide.classList.add('is-prev');
+          }
+        });
+
+        const pct = ((currentIndex + 1) / total) * 100;
+        progressFill.style.width = pct + '%';
+        slideCounter.textContent = (currentIndex + 1) + ' / ' + total;
+
+        btnPrev.disabled = currentIndex === 0;
+        btnNext.disabled = currentIndex === total - 1;
+      }
+
+      btnPrev.addEventListener('click', () => goToSlide(currentIndex - 1));
+      btnNext.addEventListener('click', () => goToSlide(currentIndex + 1));
+
+      btnFullscreen.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen?.().catch(() => {});
+        } else {
+          document.exitFullscreen?.().catch(() => {});
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.target && e.target.tagName === 'VIDEO' && e.key === ' ') return;
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          if (e.shiftKey && e.key === ' ') {
+            goToSlide(currentIndex - 1);
+          } else {
+            goToSlide(currentIndex + 1);
+          }
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          goToSlide(currentIndex - 1);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          goToSlide(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          goToSlide(total - 1);
+        }
+      });
+
+      // Carruseles interactivos en Slide 14
+      function setupMiniCarousel(images, imgId, counterId, prevId, nextId) {
+        const imgEl = document.getElementById(imgId);
+        const counterEl = document.getElementById(counterId);
+        const prevEl = document.getElementById(prevId);
+        const nextEl = document.getElementById(nextId);
+        if (!imgEl || !counterEl || !prevEl || !nextEl) return;
+        let idx = 0;
+        function render() {
+          imgEl.src = images[idx].src;
+          imgEl.alt = images[idx].alt;
+          counterEl.textContent = 'Lámina ' + (idx + 1) + ' / ' + images.length;
+        }
+        prevEl.addEventListener('click', () => {
+          idx = (idx - 1 + images.length) % images.length;
+          render();
+        });
+        nextEl.addEventListener('click', () => {
+          idx = (idx + 1) % images.length;
+          render();
+        });
+      }
+
+      setupMiniCarousel(
+        [
+          { src: 'assets/aistudio/lunes_87742364.png', alt: 'Lunes Lámina 1: ¡Atención! Llegó el test más importante del día' },
+          { src: 'assets/aistudio/lunes2_294def6a.jpg', alt: 'Lunes Lámina 2: Tenemos varios tipos de personas y varios tipos de Guaymallén' },
+          { src: 'assets/aistudio/lunes_3_442f4efe.jpg', alt: 'Lunes Lámina 3: ¿Cuál sos vos?' }
+        ],
+        'lunesImg', 'lunesCounter', 'lunesPrev', 'lunesNext'
+      );
+
+      setupMiniCarousel(
+        [
+          { src: 'assets/aistudio/jueves1_f5666093.png', alt: 'Jueves Lámina 1: Se viene la batalla Rubí vs Triple' },
+          { src: 'assets/aistudio/jueves2_11f436eb.png', alt: 'Jueves Lámina 2: Guaymallén Rubí, el rebelde de la familia' },
+          { src: 'assets/aistudio/jueves3_66fc229b.png', alt: 'Jueves Lámina 3: Guaymallén Triple, 3 capas de puro chocolate' },
+          { src: 'assets/aistudio/jueves4_1334a71c.png', alt: 'Jueves Lámina 4: Dos sabores, una decisión' },
+          { src: 'assets/aistudio/jueves5_1ca92e78.png', alt: 'Jueves Lámina 5: ¡Elegí tu bando! Comentá Rubí o Chocolate' }
+        ],
+        'juevesImg', 'juevesCounter', 'juevesPrev', 'juevesNext'
+      );
+
+      // Soporte táctil básico para deslizar en tablet/móvil
+      let touchStartX = 0;
+      document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      document.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(dx) > 48) {
+          if (dx < 0) goToSlide(currentIndex + 1);
+          else goToSlide(currentIndex - 1);
+        }
+      }, { passive: true });
+
+      goToSlide(0);
+      animateCounter();
+    })();
+  </script>
+</body>
+</html>
